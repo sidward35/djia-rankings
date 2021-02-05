@@ -10,4 +10,5 @@ jupyterlab-pygments==0.1.2
 jupyterlab-server
 pandas
 requests
+seaborn
 voila==0.2.3
