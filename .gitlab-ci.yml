@@ -12,3 +12,4 @@ deploy_code:
   stage: deploy
   script:
     - pip install requests
+    - echo "test API"
