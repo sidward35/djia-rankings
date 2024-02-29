@@ -1,0 +1,15 @@
+include:
+  - template: Jobs/SAST.gitlab-ci.yml
+  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
+  - template: Jobs/Secret-Detection.gitlab-ci.yml
+
+stages:
+  - test
+  - deploy
+
+deploy_code:
+  image: python:latest
+  stage: deploy
+  script:
+    - pip install requests
+    - echo "test API"
